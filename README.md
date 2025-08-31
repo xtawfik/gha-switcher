@@ -10,6 +10,16 @@ A VS Code extension that allows you to switch between multiple GitHub accounts s
 - **gh CLI Integration**: Automatically switches GitHub CLI authentication
 - **Token Management**: Handles OAuth tokens securely without storing them
 
+## Screenshots
+
+### Adding a GitHub Account
+![Adding GitHub Account](https://raw.githubusercontent.com/xtawfik/gha-switcher/main/docs/add-account-dialog.png)
+*Input dialog for labeling a new GitHub account*
+
+### Command Palette Integration
+![Command Palette](https://raw.githubusercontent.com/xtawfik/gha-switcher/main/docs/command-palette.png)
+*Easy access to all GHA Switcher commands*
+
 ## Installation
 
 1. Install the extension from the VS Code marketplace
@@ -34,14 +44,20 @@ Configure your GitHub account settings in VS Code:
 ### Commands
 
 1. **GHA Switcher: Add GitHub Account**
-   - Adds a new GitHub account or refreshes existing ones
+   - Adds a new GitHub account with a custom label
    - Prompts for a label (e.g., "Personal", "Client")
    - Uses VS Code's built-in GitHub authentication
 
 2. **GHA Switcher: Switch GitHub Account**
    - Switches the active GitHub CLI authentication
    - Select from saved accounts
+   - **Smart switching**: Only re-authenticates when necessary
    - Automatically updates `gh` authentication
+
+3. **GHA Switcher: Refresh Account Token**
+   - Manually refresh authentication tokens for specific accounts
+   - Useful when tokens expire or need renewal
+   - Updates stored session information
 
 ### Workflow
 
@@ -51,7 +67,12 @@ Configure your GitHub account settings in VS Code:
 
 2. **Daily Use**:
    - Use "GHA Switcher: Switch GitHub Account" to switch gh CLI auth
+   - **Smart switching**: The extension remembers your sessions and only asks for re-authentication when tokens expire
    - Your GitHub CLI will automatically use the selected account
+
+3. **Maintenance**:
+   - Use "GHA Switcher: Refresh Account Token" when you need to manually refresh tokens
+   - Tokens are automatically managed by VS Code's authentication system
 
 ## Settings
 

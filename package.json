@@ -2,11 +2,11 @@
   "name": "gha-switcher",
   "displayName": "GitHub Accounts Switcher",
   "description": "Switch between multiple GitHub accounts (gh/API) from VS Code/Cursor.",
-  "version": "0.0.2",
-  "publisher": "your-publisher-id",
+  "version": "0.0.1",
+  "publisher": "xtawfik",
   "repository": {
     "type": "git",
-    "url": "https://github.com/xtawfik/ssh-switcher.git"
+    "url": "https://github.com/xtawfik/gha-switcher.git"
   },
   "engines": { "vscode": "^1.87.0" },
   "categories": ["Other"],
@@ -16,7 +16,8 @@
   "contributes": {
     "commands": [
       { "command": "ghaSwitcher.addAccount", "title": "GHA Switcher: Add GitHub Account" },
-      { "command": "ghaSwitcher.switchAccount", "title": "GHA Switcher: Switch GitHub Account" }
+      { "command": "ghaSwitcher.switchAccount", "title": "GHA Switcher: Switch GitHub Account" },
+      { "command": "ghaSwitcher.refreshAccount", "title": "GHA Switcher: Refresh Account Token" }
     ],
     "configuration": {
       "title": "GitHub Accounts Switcher",

@@ -26,7 +26,13 @@ Get up and running with GitHub Accounts Switcher in 5 minutes!
 ### Switch GitHub Account
 - `Ctrl+Shift+P` → "GHA Switcher: Switch GitHub Account"
 - Choose your account
+- **Smart switching**: Only re-authenticates when necessary
 - `gh` CLI will now use the selected account
+
+### Refresh Account Token (Optional)
+- `Ctrl+Shift+P` → "GHA Switcher: Refresh Account Token"
+- Choose account to refresh
+- Useful when tokens expire
 
 ## That's it! 
 
