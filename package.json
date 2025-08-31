@@ -1,0 +1,52 @@
+{
+  "name": "gha-switcher",
+  "displayName": "GitHub Accounts Switcher",
+  "description": "Switch between multiple GitHub accounts (gh/API) from VS Code/Cursor.",
+  "version": "0.0.2",
+  "publisher": "your-publisher-id",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xtawfik/ssh-switcher.git"
+  },
+  "engines": { "vscode": "^1.87.0" },
+  "categories": ["Other"],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "contributes": {
+    "commands": [
+      { "command": "ghaSwitcher.addAccount", "title": "GHA Switcher: Add GitHub Account" },
+      { "command": "ghaSwitcher.switchAccount", "title": "GHA Switcher: Switch GitHub Account" }
+    ],
+    "configuration": {
+      "title": "GitHub Accounts Switcher",
+      "properties": {
+        "ghaSwitcher.githubScopes": {
+          "type": "array",
+          "description": "OAuth scopes to request for GitHub sessions.",
+          "default": ["repo", "read:org", "gist", "workflow"],
+          "items": { "type": "string" }
+        },
+        "ghaSwitcher.ghPath": {
+          "type": "string",
+          "description": "Path to GitHub CLI (gh).",
+          "default": "gh"
+        }
+      }
+    }
+  },
+  "extensionDependencies": ["github.vscode-pull-request-github"],
+  "main": "./out/extension.js",
+  "scripts": {
+    "vscode:prepublish": "pnpm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/node": "^18.19.0",
+    "@types/vscode": "^1.87.0",
+    "typescript": "^5.4.0",
+    "vsce": "^2.15.0"
+  }
+}
