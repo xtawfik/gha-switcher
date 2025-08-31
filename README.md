@@ -13,11 +13,11 @@ A VS Code extension that allows you to switch between multiple GitHub accounts s
 ## Screenshots
 
 ### Adding a GitHub Account
-![Adding GitHub Account](https://raw.githubusercontent.com/xtawfik/gha-switcher/main/docs/add-account-dialog.png)
+![Adding GitHub Account](https://github.com/xtawfik/gha-switcher/blob/a53200cb8b5b823d416b36c4f89b9cb7da3331de/docs/add-account-dialog.png?raw=true)
 *Input dialog for labeling a new GitHub account*
 
 ### Command Palette Integration
-![Command Palette](https://raw.githubusercontent.com/xtawfik/gha-switcher/main/docs/command-palette.png)
+![Command Palette](https://github.com/xtawfik/gha-switcher/blob/main/docs/command-palette.png?raw=true)
 *Easy access to all GHA Switcher commands*
 
 ## Installation

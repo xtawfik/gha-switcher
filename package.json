@@ -4,6 +4,7 @@
   "description": "Switch between multiple GitHub accounts (gh/API) from VS Code/Cursor.",
   "version": "0.0.1",
   "publisher": "xtawfik",
+  "icon": "icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/xtawfik/gha-switcher.git"
