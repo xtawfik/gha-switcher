@@ -1,7 +1,7 @@
 {
   "name": "gha-switcher",
   "displayName": "GitHub Accounts Switcher",
-  "description": "Switch between multiple GitHub accounts (gh/API) from VS Code/Cursor.",
+  "description": "Easily switch between multiple GitHub accounts in VS Code/Cursor. Manage GitHub CLI authentication, OAuth tokens, and switch between personal, work, and client accounts seamlessly.",
   "version": "0.0.1",
   "publisher": "xtawfik",
   "icon": "icon.png",
@@ -9,8 +9,25 @@
     "type": "git",
     "url": "https://github.com/xtawfik/gha-switcher.git"
   },
-  "engines": { "vscode": "^1.87.0" },
-  "categories": ["Other"],
+  "engines": {
+    "vscode": "^1.87.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": ["github", "accounts", "switcher", "multi-account", "github-cli", "oauth", "authentication"],
+  "license": "MIT",
+  "galleryBanner": {
+    "color": "#ffffff",
+    "theme": "light"
+  },
+  "homepage": "https://github.com/xtawfik/gha-switcher#readme",
+  "bugs": {
+    "url": "https://github.com/xtawfik/gha-switcher/issues"
+  },
+  "author": {
+    "name": "xtawfik"
+  },
   "activationEvents": [
     "onStartupFinished"
   ],
